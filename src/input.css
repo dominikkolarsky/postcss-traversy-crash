@@ -1,6 +1,23 @@
+@import 'vars';
+@import 'card';
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-media --viewport-small (width <= 500px);
+
+
 body {
-    background: #000;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    color: #fff;
+    place-items: center;
+    background: $light-color;
+}
+
+input::placeholder {
+    color: red;
+}
+
+:--heading {
+    @media(--viewport-small) {
+        font-size: 2.5rem;
+    }
 }

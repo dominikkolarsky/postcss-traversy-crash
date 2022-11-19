@@ -5,14 +5,21 @@
   "main": "index.js",
   "scripts": {
     "watch:css": "postcss src/input.css -o dist/style.css -w",
-    "build:css": "postcss src/input.css -o dist/style.css"
+    "build:css": "postcss src/input.css -o dist/style.css",
+    "production": "cross-env NODE_ENV=production postcss src/input.css -o dist/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.14",
     "postcss": "^8.4.19",
-    "postcss-cli": "^10.0.0"
+    "postcss-assets": "^6.0.0",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "postcss-preset-env": "^7.8.3",
+    "precss": "^4.0.0"
   }
 }

@@ -1,0 +1,13 @@
+.card {
+    padding: 20px;
+    margin-top: 20px;
+    border: $borderWidth solid $borderColor;
+    background-image: resolve('dk-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: width('dk-logo.png');
+
+    h2 {
+        color: red;
+    }
+}
