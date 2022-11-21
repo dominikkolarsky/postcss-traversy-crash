@@ -1,5 +1,5 @@
 1. project init
-npm int -y
+npm init -y
 
 2. install postCSS
 npm i -D postcss postcss-cli
