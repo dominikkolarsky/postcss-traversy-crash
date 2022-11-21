@@ -25,7 +25,7 @@ module.exports = {
   plugins: [require('autoprefixer')],
 };
 
-7. add postcss preset-env
+7. add postcss preset-env (set stage for targeting browser)
 npm i -D postcss-preset-env
 
 require('postcss-preset-env')({
@@ -34,7 +34,7 @@ require('postcss-preset-env')({
 8. add preCSS (=SASS syntax)
 npm i -D precss
 
-9. add postcss IMPORT
+9. add postcss IMPORT (allow importing css)
 npm i -D postcss-import
 
 10. add postcss ASSETS
